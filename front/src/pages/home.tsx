@@ -42,9 +42,9 @@ export default function LandingPage() {
             with our AI-powered meeting coach.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3 rounded-md transition-colors">
+            <Link to="/waitlist" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3 rounded-md transition-colors">
               Join Waitlist
-            </button>
+            </Link>
             <button className="border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 text-lg px-8 py-3 rounded-md transition-colors bg-transparent">
               Watch Demo
             </button>
@@ -273,9 +273,9 @@ export default function LandingPage() {
                   PDF export
                 </li>
               </ul>
-              <button className="w-full border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 py-2 px-4 rounded-md transition-colors bg-transparent">
+              <Link to="/waitlist" className="w-full border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 py-2 px-4 rounded-md transition-colors bg-transparent">
                 Join Waitlist
-              </button>
+              </Link>
             </div>
 
             <div className="bg-blue-50 border-2 border-blue-500 rounded-lg p-6 relative">
@@ -309,9 +309,9 @@ export default function LandingPage() {
                   Analytics dashboard
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition-colors">
+              <Link to="/waitlist" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition-colors">
                 Join Waitlist
-              </button>
+              </Link>
             </div>
 
             <div className="bg-white border-2 hover:border-purple-200 transition-colors rounded-lg p-6">
@@ -354,9 +354,9 @@ export default function LandingPage() {
             Join our waitlist and be among the first to experience the future of meeting management.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3 rounded-md transition-colors">
+            <Link to="/waitlist" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3 rounded-md transition-colors">
               Join Waitlist
-            </button>
+            </Link>
             <button className="border border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3 rounded-md transition-colors bg-transparent">
               Schedule Demo
             </button>
