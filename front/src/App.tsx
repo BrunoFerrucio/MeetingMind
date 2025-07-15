@@ -10,6 +10,7 @@ import RoadmapPage from './pages/roadmap'
 import PricingPage from './pages/pricing'
 import FeaturesPage from './pages/features'
 import SignInPage from './pages/user/sign-in'
+import Register from './pages/user/register'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/sign-in" element={<SignInPage />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   )
