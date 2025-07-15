@@ -7,6 +7,7 @@ import TermsPage from './pages/terms'
 import PrivacyPolicyPage from './pages/terms/privacy-policy'
 import AboutPage from './pages/about'
 import RoadmapPage from './pages/roadmap'
+import PricingPage from './pages/pricing'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/roadmap" element={<RoadmapPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
       </Routes>
     </BrowserRouter>
   )

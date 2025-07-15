@@ -384,9 +384,9 @@ export default function LandingPage() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <Link to="/pricing" className="hover:text-white transition-colors">
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/roadmap" className="hover:text-white transition-colors">
