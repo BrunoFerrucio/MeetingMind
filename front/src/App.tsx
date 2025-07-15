@@ -9,6 +9,7 @@ import AboutPage from './pages/about'
 import RoadmapPage from './pages/roadmap'
 import PricingPage from './pages/pricing'
 import FeaturesPage from './pages/features'
+import SignInPage from './pages/user/sign-in'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/roadmap" element={<RoadmapPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/features" element={<FeaturesPage />} />
+        <Route path="/sign-in" element={<SignInPage />} />
       </Routes>
     </BrowserRouter>
   )
