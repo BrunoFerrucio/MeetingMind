@@ -1,6 +1,6 @@
 import { CheckCircle, Clock, Zap, Calendar, Users, Smartphone, Globe, ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
-import HomeHeader from "../../components/headers/home"
+import HomeHeader from "../../components/ui/header-home"
 
 export default function RoadmapPage() {
   return (
