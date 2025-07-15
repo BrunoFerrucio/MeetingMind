@@ -9,8 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} index />
-        <Route path="/dashboard" element={<DashboardIndex />} index />
-        <Route path="/waitlist" element={<WaitlistPage />} index />
+        <Route path="/terms-of-use" element={<TermsPage />} />
       </Routes>
     </BrowserRouter>
   )
