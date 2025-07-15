@@ -1,29 +1,12 @@
-import { Brain, Users, Zap, Shield } from "lucide-react"
+import { Users, Zap, Shield } from "lucide-react"
 import { Link } from "react-router-dom"
+import HomeHeader from "../../components/headers/home"
 
 export default function WaitlistPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <a href="/" className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">MeetingMind</span>
-          </a>
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="/#features" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Features
-            </a>
-            <a href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
-              About
-            </a>
-            <a href="/#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Pricing
-            </a>
-          </nav>
-        </div>
-      </header>
+      <HomeHeader />
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">

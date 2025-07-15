@@ -1,32 +1,12 @@
 import { CheckCircle, Upload, Brain, Calendar, BarChart3, FileText, Bell } from "lucide-react"
 import { Link } from "react-router-dom"
+import HomeHeader from "../components/headers/home"
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">MeetingMind</span>
-          </div>
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Features
-            </a>
-            <a href="#roadmap" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Roadmap
-            </a>
-            <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Pricing
-            </a>
-            <Link to="/dashboard" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
-              Get Started
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <HomeHeader />
 
       {/* Hero Section */}
       <section className="py-20 px-4">
