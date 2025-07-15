@@ -402,7 +402,9 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 MeetingMind. All rights reserved.</p>
+            <p>&copy; 2025 MeetingMind. All rights reserved.</p>
+            <p>Bruno Ferrucio - CEO & Founder</p>
+            <p><Link to="https://wa.me/5511944994032" target="_blank">(11) 94499-4032</Link> - <Link to="mailto:brunofas1@gmail.com">brunofas1@gmail.com</Link></p>
           </div>
         </div>
       </footer>
