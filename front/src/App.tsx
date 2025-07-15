@@ -4,6 +4,7 @@ import LandingPage from './pages/home'
 import DashboardIndex from './pages/dashboard'
 import WaitlistPage from './pages/waitlist-page'
 import TermsPage from './pages/terms'
+import PrivacyPolicyPage from './pages/terms/privacy-policy'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/dashboard" element={<DashboardIndex />} />
         <Route path="/waitlist" element={<WaitlistPage />} />
         <Route path="/terms-of-use" element={<TermsPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       </Routes>
     </BrowserRouter>
   )
