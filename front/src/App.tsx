@@ -6,6 +6,7 @@ import WaitlistPage from './pages/waitlist-page'
 import TermsPage from './pages/terms'
 import PrivacyPolicyPage from './pages/terms/privacy-policy'
 import AboutPage from './pages/about'
+import RoadmapPage from './pages/roadmap'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/terms-of-use" element={<TermsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/roadmap" element={<RoadmapPage />} />
       </Routes>
     </BrowserRouter>
   )
