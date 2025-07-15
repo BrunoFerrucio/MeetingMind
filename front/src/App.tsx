@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Home } from './pages/home'
 import './App.css'
+import LandingPage from './pages/home'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} index />
+        <Route path="/" element={<LandingPage />} index />
       </Routes>
     </BrowserRouter>
   )
