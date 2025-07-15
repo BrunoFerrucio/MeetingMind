@@ -406,17 +406,12 @@ export default function LandingPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Support</h3>
+              <h3 className="font-semibold mb-4">Legal</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <Link to="/terms-of-use" className="hover:text-white transition-colors">
                     Terms of Use
                   </Link>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Help Center
-                  </a>
                 </li>
                 <li>
                   <Link to="/privacy-policy" className="hover:text-white transition-colors">
