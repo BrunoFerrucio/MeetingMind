@@ -1,5 +1,5 @@
 import { Shield, Eye, Lock, Database, Mail } from "lucide-react"
-import HomeHeader from "../../components/ui/header-home"
+import HomeHeader from "../../components/layout/header-home"
 
 export default function PrivacyPolicyPage() {
   return (

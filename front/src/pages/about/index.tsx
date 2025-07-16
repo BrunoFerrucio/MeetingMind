@@ -1,6 +1,6 @@
 import { Target, Users, Lightbulb, Award, Globe } from "lucide-react"
 import { Link } from "react-router-dom"
-import HomeHeader from "../../components/ui/header-home"
+import HomeHeader from "../../components/layout/header-home"
 
 export default function AboutPage() {
   return (

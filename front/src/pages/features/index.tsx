@@ -12,7 +12,7 @@ import {
   ArrowRight,
 } from "lucide-react"
 import { Link } from "react-router-dom"
-import HomeHeader from "../../components/ui/header-home"
+import HomeHeader from "../../components/layout/header-home"
 
 export default function FeaturesPage() {
   return (

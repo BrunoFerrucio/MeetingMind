@@ -1,5 +1,6 @@
-import Header from "../../components/ui/header-dashboard";
-import Sidebar from "../../components/ui/sidebar";
+import Header from "../../components/layout/header-dashboard";
+import Sidebar from "../../components/layout/sidebar";
+import DashboardHome from "./home";
 
 export default function DashboardIndex() {
   return (

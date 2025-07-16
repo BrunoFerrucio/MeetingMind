@@ -1,5 +1,5 @@
 import { FileText, AlertTriangle, Scale, Shield, Users } from "lucide-react"
-import HomeHeader from "../../components/ui/header-home"
+import HomeHeader from "../../components/layout/header-home"
 
 export default function TermsPage() {
   return (
