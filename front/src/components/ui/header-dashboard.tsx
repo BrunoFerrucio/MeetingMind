@@ -13,13 +13,14 @@ export default function Header() {
             <Brain className="h-8 w-8 text-blue-600" />
             <span className="text-2xl font-bold text-gray-900">MeetingMind</span>
           </span>
+
+          <label className="input w-140 focus-within:shadow-none focus-within:outline-none">
+            <Search className="w-5 h-5 text-gray-400 mr-2" />
+            <input type="text" className="grow focus:outline-none" placeholder="Search" />
+          </label>
     
           {/* Ícones e perfil - lado direito */}
           <div className="flex items-center justify-end">
-            {/* Search input icon*/}
-            <button className="p-2 hover:bg-gray-100 transition-colors mr-3 bg-white rounded-4xl hover:cursor-pointer">
-              <Search className="w-5 h-5 text-gray-600" />
-            </button>
     
             {/* Notification icon */}
             <div className="relative">
@@ -91,10 +92,7 @@ export default function Header() {
     
             {/* User profile */}
             <div className="relative inline-block bg-white rounded-4xl">
-              <button 
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="flex items-center justify-center gap-2 p-2 px-4 rounded-lg transition-colors hover:cursor-pointer hover:bg-gray-100"
-              >
+              <button className="flex items-center justify-center gap-2 p-2 px-4 rounded-lg transition-colors">
                 <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
                   <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
