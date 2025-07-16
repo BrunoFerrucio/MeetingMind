@@ -1,4 +1,4 @@
-import { Home, Settings, User } from "lucide-react"
+import { Home, LogOut, Presentation, Settings, User } from "lucide-react"
 
 export default function Sidebar() {
   return (
@@ -6,10 +6,11 @@ export default function Sidebar() {
       <nav>
         <div className="transition-all duration-300 space-y-2 tabs tabs-box flex flex-col items-start p-2 w-15 hover:w-52">
           {[
-            { icon: Home,       label: "Dashboard"   },
-            { icon: Settings,   label: "Meeting"     },
-            { icon: User,       label: "My profile"  },
-            { icon: Settings,   label: "Logout"      }
+            { icon: Home,         label: "Dashboard"  },
+            { icon: Presentation, label: "Meeting"    },
+            { icon: Settings,     label: "Settings"   },
+            { icon: User,         label: "My profile" },
+            { icon: LogOut,       label: "Logout"     }
           ].map((item, index) => (
             <label
               key={index}
