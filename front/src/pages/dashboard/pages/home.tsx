@@ -65,12 +65,22 @@ export default function DashboardHome() {
         </div>
       </div>
 
-      <div className="my-8 w-full flex flex-row border-dashed border-2 border-purple-500 rounded-2xl bg-purple-100 p-4 items-center justify-between cursor-pointer">
+      <div
+        className="my-8 w-full flex flex-row border-dashed border-2 border-purple-500 rounded-2xl bg-purple-100 p-4 items-center justify-between cursor-pointer"
+        onDragOver={(e) => e.preventDefault()} // Previne o comportamento padrão
+        onDrop={(e) => {
+          e.preventDefault();
+          const files = e.dataTransfer.files;
+          if (files.length > 0) {
+            console.log("Arquivos arrastados:", files); // Substitua por lógica de upload
+          }
+        }}
+      >
         <div className="flex flex-col">
           <span className="text-2xl font-light">Pronto para levar sua próxima reunião ao próximo nível?</span>
           <span className="text-md font-light text-gray-700">Faça o upload e deixe a sua IA trabalhar para você.</span>
         </div>
-
+      
         <label className="border-blue-500 flex flex-row p-2 rounded-2xl items-center justify-center space-x-2 bg-blue-500 cursor-pointer">
           <Plus className="h-5 w-5 text-white" />
           <span className="text-md font-semibold text-white">Fazer Upload</span>
