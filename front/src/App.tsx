@@ -13,6 +13,7 @@ import SignInPage from './pages/user/sign-in'
 import Register from './pages/user/register'
 import DashboardHome from './pages/dashboard/pages/home'
 import { DashboardMeetingDetails } from './pages/dashboard/pages/meeting/details'
+import DashboardMeeting from './pages/dashboard/pages/meeting'
 
 function App() {
   return (
@@ -42,10 +43,10 @@ function App() {
           <Route path="calendar"        element={<div>Meeting Page</div>} />
           <Route path="integrations"    element={<div>Integrations Page</div>} />
           <Route path="settings"        element={<div>Settings Page</div>} />
-          <Route path="meetings"        element={<div>Meetings Page</div>} />
-        </Route>
+          <Route path="meetings"        element={<DashboardMeeting />} />
 
-        <Route path="/dashboard/meeting/details/:id" element={<DashboardMeetingDetails />} />
+          <Route path="meetings/details/:id" element={<DashboardMeetingDetails />} />
+        </Route>
 
         <Route path="/settings" element={<div>Settings Page</div>} />
 
