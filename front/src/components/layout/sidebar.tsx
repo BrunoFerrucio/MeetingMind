@@ -2,7 +2,7 @@ import { LayoutPanelTop, User } from "lucide-react"
 
 export default function Sidebar() {
   return (
-    <div className="h-full flex flex-col items-start justify-between bg-gray-200">
+    <div className="h-full flex flex-col items-start justify-between shadow-2xl bg-gray-50 w-70">
       {/* Header */}
       <div className="flex px-5 py-5">
         <span className="text-xl font-bold cursor-default">MeetingMind</span>
