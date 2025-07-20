@@ -18,6 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public Routes */}
         <Route path="/" element={<LandingPage />} />
         <Route path="/waitlist" element={<WaitlistPage />} />
         <Route path="/terms-of-use" element={<TermsPage />} />
@@ -28,6 +29,8 @@ function App() {
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/register" element={<Register />} />
+
+        {/* Protected Routes */}
 
         <Route path="/profile" element={<DashboardIndex />}>
           <Route index element={<div>Profile Page</div>} />
@@ -42,8 +45,11 @@ function App() {
           <Route path="meetings"        element={<div>Meetings Page</div>} />
         </Route>
 
-        <Route path="/dashboard/meeting/details" element={<DashboardMeetingDetails />} />
+        <Route path="/dashboard/meeting/details/:id" element={<DashboardMeetingDetails />} />
 
+        <Route path="/settings" element={<div>Settings Page</div>} />
+
+        {/* Error Route */}
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </BrowserRouter>

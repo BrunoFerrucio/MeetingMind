@@ -52,11 +52,6 @@ export default function Sidebar() {
           <Blocks className="w-5 h-5" />
           <span>Integrações</span>
         </Link>
-
-        <Link to="/dashboard/settings" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
-          <Settings className="w-5 h-5" />
-          <span>Configurações</span>
-        </Link>
       </div>
 
       {/* Footer */}
@@ -85,6 +80,11 @@ export default function Sidebar() {
               <Link to="/referrals" className="flex items-center space-x-2 cursor-pointer hover:bg-gray-200 p-2 rounded-2xl">
                 <Blocks className="w-4 h-4" />
                 <span>Indicações</span>
+              </Link>
+
+              <Link to="/settings" className="flex items-center space-x-2 cursor-pointer hover:bg-gray-200 p-2 rounded-2xl">
+                <Settings className="w-5 h-5" />
+                <span>Configurações</span>
               </Link>
 
               <Link to="/sign-out" className="flex items-center space-x-2 cursor-pointer border-t border-gray-200 rounded-none hover:bg-gray-200 hover:rounded-2xl p-2">
