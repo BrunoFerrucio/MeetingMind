@@ -1,4 +1,5 @@
 import { Calendar, Clock10, Download, Ellipsis, ListChecks, Plus, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function DashboardHome() {
   return (
@@ -102,7 +103,7 @@ export default function DashboardHome() {
 
         <div className="flex flex-col">
           {/* Meeting Card */}
-          <div className="w-full flex flex-row rounded-2xl border-gray-600 p-3 bg-white shadow-md mt-4 items-center justify-between">
+          <Link to="/dashboard/meeting/details" className="w-full flex flex-row rounded-2xl border-gray-600 p-3 bg-white shadow-md mt-4 items-center justify-between">
             <div className="flex flex-col">
               <div className="flex flex-row mb-3">
                 <span>Reunião de planejamento 4ºQ</span>
@@ -140,7 +141,7 @@ export default function DashboardHome() {
                 <Ellipsis className="h-5 w-5 text-gray-500 ml-2" />
               </button>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

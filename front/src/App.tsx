@@ -12,6 +12,7 @@ import FeaturesPage from './pages/features'
 import SignInPage from './pages/user/sign-in'
 import Register from './pages/user/register'
 import DashboardHome from './pages/dashboard/pages/home'
+import { DashboardMeetingDetails } from './pages/dashboard/pages/meeting/details'
 
 function App() {
   return (
@@ -33,11 +34,15 @@ function App() {
         </Route>
 
         <Route path="/dashboard" element={<DashboardIndex />}>
-          <Route index element={<DashboardHome />} /> {/* Página inicial do Dashboard */}
-          <Route path="calendar" element={<div>Meeting Page</div>} />
-          <Route path="integrations" element={<div>Integrations Page</div>} />
-          <Route path="settings" element={<div>Settings Page</div>} />
+          <Route index                  element={<DashboardHome />} />
+
+          <Route path="calendar"        element={<div>Meeting Page</div>} />
+          <Route path="integrations"    element={<div>Integrations Page</div>} />
+          <Route path="settings"        element={<div>Settings Page</div>} />
+          <Route path="meetings"        element={<div>Meetings Page</div>} />
         </Route>
+
+        <Route path="/dashboard/meeting/details" element={<DashboardMeetingDetails />} />
 
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
