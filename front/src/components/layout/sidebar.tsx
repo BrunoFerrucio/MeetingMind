@@ -1,39 +1,36 @@
-import { Home, LogOut, Presentation, Settings, User } from "lucide-react"
+import { LayoutPanelTop, User } from "lucide-react"
 
 export default function Sidebar() {
   return (
-    <div className="flex flex-col justify-center px-2">
-      <nav>
-        <div className="transition-all duration-300 space-y-2 tabs tabs-box flex flex-col items-start p-2 w-15 hover:w-52">
-          {[
-            { icon: Home,         label: "Dashboard"  },
-            { icon: Presentation, label: "Meeting"    },
-            { icon: Settings,     label: "Settings"   },
-            { icon: User,         label: "My profile" },
-            { icon: LogOut,       label: "Logout"     }
-          ].map((item, index) => (
-            <label
-              key={index}
-              className="tab w-full px-3 py-2 rounded-lg text-left justify-start flex flex-row flex-nowrap cursor-pointer hover:bg-gray-100"
-            >
-              <item.icon className="w-5 h-5 flex-shrink-0" />
+    <div className="h-full flex flex-col items-start justify-between bg-gray-200">
+      {/* Header */}
+      <div className="flex px-5 py-5">
+        <span className="text-xl font-bold cursor-default">MeetingMind</span>
 
-              <input
-                key={item.label}
-                type="radio"
-                name="sidebar-tabs"
-                className={`tab transition-colors px-2 rounded-4xl hover:text-black ${index === 0 ? 'pl-3' : ''} ${index === 0 - 1 ? 'pr-3' : ''}`}
-                defaultChecked={index === 0}
-                aria-label={item.label}
-              />
+        {/* <button className="text-gray-600 ml-3 cursor-pointer hover:text-gray-800">
+          <PanelLeftClose className="w-6 h-6" />
+        </button> */}
+      </div>
 
-              <span className='ml-3 overflow-hidden whitespace-nowrap transition-opacity duration-300'>
-                {item.label}
-              </span>
-            </label>
-          ))}
+      {/* Content */}
+      <div className="flex flex-col mt-4 py-5 space-y-2 w-full">
+        <a href="/" className="flex items-center space-x-2 text-md mb-5 px-5 py-3 w-full hover:bg-gray-300">
+          <LayoutPanelTop className="w-5 h-5" />
+          <span>Dashboard</span>
+        </a>
+      </div>
+
+      {/* Footer */}
+      <div className="border-t border-gray-300 w-full">
+        <div className="flex flex-row items-center m-1 p-2 cursor-pointer hover:bg-gray-300">
+          <User />
+
+          <div className="flex flex-col ml-2">
+            <span className="text-sm font-semibold">Bruno Almeida</span>
+            <span className="text-xs text-muted-foreground">Premium</span>
+          </div>
         </div>
-      </nav>
+      </div>
     </div>
   )
 }
