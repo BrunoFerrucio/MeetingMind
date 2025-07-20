@@ -1,4 +1,4 @@
-import { Blocks, Calendar, LayoutPanelTop, Plus, Settings, User } from "lucide-react"
+import { Blocks, Calendar, LayoutPanelTop, LogOut, Plus, Settings, User } from "lucide-react"
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom"
 
@@ -65,8 +65,8 @@ export default function Sidebar() {
         onClick={() => setIsUserMenuOpen(true)}
         ref={userMenuRef}
       >
-        <div className="flex flex-row items-center m-1 p-2 cursor-pointer hover:bg-gray-300">
-          <User />
+        <div className="flex flex-row items-center m-1 p-2 cursor-pointer hover:bg-gray-200">
+          <User className="bg-gray-300 p-2 h-10 w-10 rounded-full" />
 
           <div className="flex flex-col ml-2">
             <span className="text-sm font-semibold">Bruno Almeida</span>
@@ -75,10 +75,22 @@ export default function Sidebar() {
         </div>
 
         {isUserMenuOpen && (
-          <div className="absolute bottom-12 left-0 bg-white shadow-lg rounded-md p-2 w-48">
+            <div className="absolute bottom-12 left-0 bg-white shadow-lg rounded-2xl p-2 w-48">
             <ul className="flex flex-col space-y-2">
-              <Link to="/profile" className="cursor-pointer hover:bg-gray-200 p-2 rounded">Perfil</Link>
-              <Link to="/sign-out" className="cursor-pointer hover:bg-gray-200 p-2 rounded">Sair</Link>
+              <Link to="/profile" className="flex items-center space-x-2 cursor-pointer hover:bg-gray-200 p-2 rounded-2xl">
+                <User className="w-4 h-4" />
+                <span>Perfil</span>
+              </Link>
+
+              <Link to="/referrals" className="flex items-center space-x-2 cursor-pointer hover:bg-gray-200 p-2 rounded-2xl">
+                <Blocks className="w-4 h-4" />
+                <span>Indicações</span>
+              </Link>
+
+              <Link to="/sign-out" className="flex items-center space-x-2 cursor-pointer border-t border-gray-200 rounded-none hover:bg-gray-200 hover:rounded-2xl p-2">
+                <LogOut className="w-4 h-4" />
+                <span>Sair</span>
+              </Link>
             </ul>
           </div>
         )}
