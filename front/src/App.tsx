@@ -40,8 +40,6 @@ function App() {
         <Route path="/dashboard" element={<DashboardIndex />}>
           <Route index                  element={<DashboardHome />} />
 
-          <Route path="calendar"        element={<div>Meeting Page</div>} />
-          <Route path="integrations"    element={<div>Integrations Page</div>} />
           <Route path="settings"        element={<div>Settings Page</div>} />
           <Route path="meetings"        element={<DashboardMeeting />} />
 
