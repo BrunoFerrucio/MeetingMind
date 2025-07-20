@@ -171,7 +171,7 @@ export default function AboutPage() {
             Be part of the revolution that's transforming how teams collaborate and stay productive.
           </p>
           <Link to="/waitlist">
-            <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-md transition-colors text-lg">
+            <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-2xl transition-colors text-lg">
               Join Our Waitlist
             </button>
           </Link>

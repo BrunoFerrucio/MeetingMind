@@ -378,12 +378,12 @@ export default function FeaturesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/waitlist">
-              <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-md transition-colors text-lg">
+              <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-2xl transition-colors text-lg">
                 Join Waitlist
               </button>
             </Link>
             <Link to="/pricing">
-              <button className="border border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-8 rounded-md transition-colors text-lg bg-transparent flex items-center">
+              <button className="border border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-8 rounded-2xl transition-colors text-lg bg-transparent flex items-center">
                 View Pricing <ArrowRight className="ml-2 h-5 w-5" />
               </button>
             </Link>

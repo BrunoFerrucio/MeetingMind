@@ -23,8 +23,8 @@ export default function PricingPage() {
         {/* Pricing Toggle */}
         <div className="flex items-center justify-center mb-12">
           <div className="bg-gray-100 rounded-lg p-1 flex">
-            <button className="bg-white text-gray-900 px-6 py-2 rounded-md font-medium shadow-sm">Monthly</button>
-            <button className="text-gray-600 px-6 py-2 rounded-md font-medium">
+            <button className="bg-white text-gray-900 px-6 py-2 rounded-2xl font-medium shadow-sm">Monthly</button>
+            <button className="text-gray-600 px-6 py-2 rounded-2xl font-medium">
               Annual
               <span className="ml-2 bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Save 20%</span>
             </button>
@@ -77,7 +77,7 @@ export default function PricingPage() {
               </li>
             </ul>
 
-            <button className="w-full border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 py-3 px-6 rounded-md transition-colors font-medium bg-transparent">
+            <button className="w-full border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 py-3 px-6 rounded-2xl transition-colors font-medium bg-transparent">
               Start Free Trial
             </button>
           </div>
@@ -130,7 +130,7 @@ export default function PricingPage() {
               </li>
             </ul>
 
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md transition-colors font-medium">
+            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-2xl transition-colors font-medium">
               Start Free Trial
             </button>
           </div>
@@ -179,7 +179,7 @@ export default function PricingPage() {
               </li>
             </ul>
 
-            <button className="w-full border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 py-3 px-6 rounded-md transition-colors font-medium bg-transparent">
+            <button className="w-full border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 py-3 px-6 rounded-2xl transition-colors font-medium bg-transparent">
               Contact Sales
             </button>
           </div>
@@ -353,11 +353,11 @@ export default function PricingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/waitlist">
-              <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-md transition-colors text-lg">
+              <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-2xl transition-colors text-lg">
                 Start Free Trial
               </button>
             </Link>
-            <button className="border border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-8 rounded-md transition-colors text-lg bg-transparent">
+            <button className="border border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-8 rounded-2xl transition-colors text-lg bg-transparent">
               Contact Sales
             </button>
           </div>

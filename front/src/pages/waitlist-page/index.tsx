@@ -34,7 +34,7 @@ export default function WaitlistPage() {
                     id="firstName"
                     name="firstName"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                     placeholder="Enter your first name"
                   />
                 </div>
@@ -48,7 +48,7 @@ export default function WaitlistPage() {
                     id="lastName"
                     name="lastName"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                     placeholder="Enter your last name"
                   />
                 </div>
@@ -62,7 +62,7 @@ export default function WaitlistPage() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                     placeholder="Enter your email address"
                   />
                 </div>
@@ -75,7 +75,7 @@ export default function WaitlistPage() {
                     type="text"
                     id="company"
                     name="company"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                     placeholder="Enter your company name"
                   />
                 </div>
@@ -87,7 +87,7 @@ export default function WaitlistPage() {
                   <select
                     id="role"
                     name="role"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                   >
                     <option value="">Select your role</option>
                     <option value="manager">Manager</option>
@@ -106,7 +106,7 @@ export default function WaitlistPage() {
                   <select
                     id="teamSize"
                     name="teamSize"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                   >
                     <option value="">Select team size</option>
                     <option value="1-5">1-5 people</option>
@@ -151,7 +151,7 @@ export default function WaitlistPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-2xl transition-colors"
                 >
                   Join Waitlist
                 </button>
