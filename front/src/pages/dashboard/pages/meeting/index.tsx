@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function DashboardMeeting() {
   return (
     <div className="flex flex-col m-8">
-
       <div className="w-full flex flex-row items-center justify-between">
         <div className="flex flex-col">
           <span className="text-2xl font-semibold">Gravações</span>
