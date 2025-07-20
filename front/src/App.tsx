@@ -11,13 +11,13 @@ import PricingPage from './pages/pricing'
 import FeaturesPage from './pages/features'
 import SignInPage from './pages/user/sign-in'
 import Register from './pages/user/register'
+import DashboardHome from './pages/dashboard/pages/home'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage />} index />
-        <Route path="/dashboard" element={<DashboardIndex />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/waitlist" element={<WaitlistPage />} />
         <Route path="/terms-of-use" element={<TermsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
@@ -27,6 +27,12 @@ function App() {
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/register" element={<Register />} />
+
+        <Route path="/dashboard" element={<DashboardIndex />}>
+          <Route index element={<DashboardHome />} /> {/* Página inicial do Dashboard */}
+          <Route path="meeting" element={<div>Meeting Page</div>} />
+          <Route path="settings" element={<div>Settings Page</div>} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
