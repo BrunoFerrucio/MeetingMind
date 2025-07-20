@@ -1,4 +1,4 @@
-import { Blocks, Calendar, LayoutPanelTop, LogOut, Plus, Settings, User } from "lucide-react"
+import { Blocks, LayoutPanelTop, LogOut, Plus, Settings, User } from "lucide-react"
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom"
 
@@ -43,16 +43,6 @@ export default function Sidebar() {
         <Link to="/dashboard" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
           <LayoutPanelTop className="w-5 h-5" />
           <span>Dashboard</span>
-        </Link>
-
-        <Link to="/dashboard/calendar" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
-          <Calendar className="w-5 h-5" />
-          <span>Agenda</span>
-        </Link>
-
-        <Link to="/dashboard/integrations" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
-          <Blocks className="w-5 h-5" />
-          <span>Integrações</span>
         </Link>
       </div>
 
