@@ -127,46 +127,47 @@ export default function DashboardHome() {
         </div>
 
         <div className="flex flex-col">
-          {/* Meeting Card */}
-          <Link to="/dashboard/meeting/details" className="w-full flex flex-row rounded-2xl border-gray-600 p-3 bg-white shadow-md mt-4 items-center justify-between">
-            <div className="flex flex-col">
-              <div className="flex flex-row mb-3">
-                <span>Reunião de planejamento 4ºQ</span>
-                <span className="ml-4 badge badge-success text-white font-semibold">Concluída</span>
+          {Array.from({ length: 10 }).map((_, index) => (
+            <Link to={`/dashboard/meeting/details/${index}`} className="w-full flex flex-row rounded-2xl border-gray-600 p-3 bg-white shadow-md mt-4 items-center justify-between">
+              <div className="flex flex-col">
+                <div className="flex flex-row mb-3">
+                  <span>Reunião de planejamento 4ºQ</span>
+                  <span className="ml-4 badge badge-success text-white font-semibold">Concluída</span>
+                </div>
+
+                <div className="flex flex-row">
+                  <div className="flex flex-row items-center">
+                    <Clock10 className="h-4 w-4 text-gray-500 mr-1" />
+                    <span className="text-sm text-gray-500">Duração: 1h</span>
+                  </div>
+
+                  <span className="mx-2 text-gray-500">•</span>
+
+                  <div className="flex flex-row items-center">
+                    <Calendar className="h-4 w-4 text-gray-500 mr-1" />
+                    <span className="text-sm text-gray-500">Data: 01/10/2023</span>
+                  </div>
+
+                  <span className="mx-2 text-gray-500">•</span>
+
+                  <div className="flex flex-row items-center">
+                    <Users className="h-4 w-4 text-gray-500 mr-1" />
+                    <span className="text-sm text-gray-500">Participantes: 5</span>
+                  </div>
+                </div>
               </div>
 
               <div className="flex flex-row">
-                <div className="flex flex-row items-center">
-                  <Clock10 className="h-4 w-4 text-gray-500 mr-1" />
-                  <span className="text-sm text-gray-500">Duração: 1h</span>
-                </div>
+                <button>
+                  <Download className="h-5 w-5 text-gray-500 ml-auto mr-2" />
+                </button>
 
-                <span className="mx-2 text-gray-500">•</span>
-
-                <div className="flex flex-row items-center">
-                  <Calendar className="h-4 w-4 text-gray-500 mr-1" />
-                  <span className="text-sm text-gray-500">Data: 01/10/2023</span>
-                </div>
-
-                <span className="mx-2 text-gray-500">•</span>
-
-                <div className="flex flex-row items-center">
-                  <Users className="h-4 w-4 text-gray-500 mr-1" />
-                  <span className="text-sm text-gray-500">Participantes: 5</span>
-                </div>
+                <button>
+                  <Ellipsis className="h-5 w-5 text-gray-500 ml-2" />
+                </button>
               </div>
-            </div>
-
-            <div className="flex flex-row">
-              <button>
-                <Download className="h-5 w-5 text-gray-500 ml-auto mr-2" />
-              </button>
-
-              <button>
-                <Ellipsis className="h-5 w-5 text-gray-500 ml-2" />
-              </button>
-            </div>
-          </Link>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
