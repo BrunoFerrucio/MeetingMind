@@ -7,17 +7,19 @@ export default function Sidebar() {
   const userMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (userMenuRef.current && !userMenuRef.current.contains(event.target as Node)) {
-        setIsUserMenuOpen(false);
+    if (isUserMenuOpen) {
+      function handleClickOutside(event: MouseEvent) {
+        if (userMenuRef.current && !userMenuRef.current.contains(event.target as Node)) {
+          setIsUserMenuOpen(false);
+        }
       }
-    }
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }
+  }, [isUserMenuOpen]);
 
   return (
     <div className="h-full flex flex-col items-start justify-between shadow-2xl bg-gray-50 w-70">
@@ -57,7 +59,10 @@ export default function Sidebar() {
       {/* Footer */}
       <div
         className="border-t border-gray-300 w-full"
-        onClick={() => setIsUserMenuOpen(true)}
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsUserMenuOpen(true);
+        }}
         ref={userMenuRef}
       >
         <div className="flex flex-row items-center m-1 p-2 cursor-pointer hover:bg-gray-200">
@@ -70,7 +75,7 @@ export default function Sidebar() {
         </div>
 
         {isUserMenuOpen && (
-            <div className="absolute bottom-12 left-0 bg-white shadow-lg rounded-2xl p-2 w-48">
+          <div className="absolute bottom-12 left-0 bg-white shadow-lg rounded-2xl p-2 w-48">
             <ul className="flex flex-col space-y-2">
               <Link to="/profile" className="flex items-center space-x-2 cursor-pointer hover:bg-gray-200 p-2 rounded-2xl">
                 <User className="w-4 h-4" />
