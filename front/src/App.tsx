@@ -28,11 +28,18 @@ function App() {
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/register" element={<Register />} />
 
+        <Route path="/profile" element={<DashboardIndex />}>
+          <Route index element={<div>Profile Page</div>} />
+        </Route>
+
         <Route path="/dashboard" element={<DashboardIndex />}>
           <Route index element={<DashboardHome />} /> {/* Página inicial do Dashboard */}
-          <Route path="meeting" element={<div>Meeting Page</div>} />
+          <Route path="calendar" element={<div>Meeting Page</div>} />
+          <Route path="integrations" element={<div>Integrations Page</div>} />
           <Route path="settings" element={<div>Settings Page</div>} />
         </Route>
+
+        <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </BrowserRouter>
   )

@@ -43,17 +43,17 @@ export default function Sidebar() {
           <span>Dashboard</span>
         </Link>
 
-        <Link to="/calendar" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
+        <Link to="/dashboard/calendar" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
           <Calendar className="w-5 h-5" />
           <span>Agenda</span>
         </Link>
 
-        <Link to="/integrations" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
+        <Link to="/dashboard/integrations" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
           <Blocks className="w-5 h-5" />
           <span>Integrações</span>
         </Link>
 
-        <Link to="/settings" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
+        <Link to="/dashboard/settings" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
           <Settings className="w-5 h-5" />
           <span>Configurações</span>
         </Link>
