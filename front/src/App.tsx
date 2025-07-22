@@ -14,10 +14,12 @@ import Register from './pages/user/register'
 import DashboardHome from './pages/dashboard/pages/home'
 import { DashboardMeetingDetails } from './pages/dashboard/pages/meeting/details'
 import DashboardMeeting from './pages/dashboard/pages/meeting'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<LandingPage />} />
