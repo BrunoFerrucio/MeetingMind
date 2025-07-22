@@ -1,6 +1,7 @@
 import { CheckCircle, Upload, Brain, Calendar, BarChart3, FileText, Bell, Circle } from "lucide-react"
 import { Link } from "react-router-dom"
 import HomeHeader from "../components/layout/header-home"
+import { Button } from "../components/ui/button"
 
 export default function LandingPage() {
   return (
@@ -14,20 +15,28 @@ export default function LandingPage() {
           <div className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-100 text-blue-800 mb-4">
             🚀 Now in Development - MVP Coming Soon
           </div>
+
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Transform Your Meetings with <span className="text-blue-600">AI Intelligence</span>
           </h1>
+
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             Automatically transcribe, summarize, and manage your meeting outcomes. Never miss a task or deadline again
             with our AI-powered meeting coach.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/waitlist" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3 rounded-2xl transition-colors">
-              Join Waitlist
+            <Link to="/waitlist">
+              <Button style="primary" size="xlg">
+                Entrar na lista de espera
+              </Button>
             </Link>
-            <button className="border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 text-lg px-8 py-3 rounded-2xl transition-colors bg-transparent">
-              Watch Demo
-            </button>
+
+            <Link to="/show-demo">
+              <Button style="secondary" size="lg">
+                Ver conceito
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -273,8 +282,10 @@ export default function LandingPage() {
                   PDF export
                 </li>
               </ul>
-              <Link to="/waitlist" className="w-full border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 py-2 px-4 rounded-2xl transition-colors bg-transparent">
-                Join Waitlist
+              <Link to="/waitlist">
+                <Button style="white" size="md">
+                  Join Waitlist
+                </Button>
               </Link>
             </div>
 
@@ -309,8 +320,10 @@ export default function LandingPage() {
                   Analytics dashboard
                 </li>
               </ul>
-              <Link to="/waitlist" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-2xl transition-colors">
-                Join Waitlist
+              <Link to="/waitlist">
+                <Button style="primary" size="lg">
+                  Join Waitlist
+                </Button>
               </Link>
             </div>
 
@@ -338,9 +351,11 @@ export default function LandingPage() {
                   On-premise deployment
                 </li>
               </ul>
-              <button className="w-full border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 py-2 px-4 rounded-2xl transition-colors bg-transparent">
-                Contact Sales
-              </button>
+              <Link to="/waitlist">
+                <Button style="white" size="md">
+                  Join Waitlist
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -353,13 +368,18 @@ export default function LandingPage() {
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Join our waitlist and be among the first to experience the future of meeting management.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/waitlist" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3 rounded-2xl transition-colors">
-              Join Waitlist
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/waitlist">
+              <Button style="white" size="xlg" className="hover:border-white">
+                Entrar na lista de espera
+              </Button>
             </Link>
-            <button className="border border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3 rounded-2xl transition-colors bg-transparent">
-              Schedule Demo
-            </button>
+
+            <Link to="/show-demo">
+              <Button style="secondary" size="lg">
+                Ver conceito
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

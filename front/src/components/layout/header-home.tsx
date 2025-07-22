@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ButtonStyle } from "../ui/button";
+import { Button } from "../ui/button";
 import { CompanyName } from "../ui/logo";
 import { AlignJustify, X } from "lucide-react";
 import { useState } from "react";
@@ -19,17 +19,21 @@ export default function HomeHeader() {
           <Link to="/features" className="font-semibold text-gray-600  hover:text-[#2D5CF2] transition-colors">
             Features
           </Link>
+
           <Link to="/roadmap" className="font-semibold text-gray-600  hover:text-[#2D5CF2] transition-colors">
             Roadmap
           </Link>
+
           <Link to="/pricing" className="font-semibold text-gray-600  hover:text-[#2D5CF2] transition-colors">
-            Pricing
+            Preços
           </Link>
-          <Link to="/sign-in" className={ButtonStyle("secondary")}>
-            Login
+
+          <Link to="/sign-in">
+            <Button style="white" size="md">Login</Button>
           </Link>
-          <Link to="/register" className={ButtonStyle("primary")}>
-            Get Started
+
+          <Link to="/register">
+            <Button style="primary" size="lg">Cadastre-se</Button>
           </Link>
         </nav>
 
@@ -55,11 +59,11 @@ export default function HomeHeader() {
           <Link to="/pricing" className="font-semibold text-gray-600 hover:text-[#2D5CF2] transition-colors">
             Pricing
           </Link>
-          <Link to="/sign-in" className={ButtonStyle("secondary")}>
-            Login
+          <Link to="/sign-in">
+            <Button style="white" isFullWidth={true}>Login</Button>
           </Link>
-          <Link to="/register" className={ButtonStyle("primary")}>
-            Get Started
+          <Link to="/register">
+            <Button style="primary" isFullWidth={true}>Cadastre-se</Button>
           </Link>
         </nav>
       )}
