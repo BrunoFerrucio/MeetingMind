@@ -12,7 +12,7 @@ export function ButtonStyle(style: ButtonProps["style"]) {
 
   } else if (style === "secondary") {
 
-    btnStyle = `border border-black flex flex-row p-4 rounded-2xl items-center justify-center space-x-2 bg-white cursor-pointer h-10 text-black font-semibold hover:bg-black hover:text-white transition-colors`;
+    btnStyle = `border border-[#121827] flex flex-row p-4 rounded-2xl items-center justify-center space-x-2 bg-white cursor-pointer h-10 text-[#121827] font-semibold hover:bg-[#121827] hover:text-white transition-colors`;
 
   }
 
