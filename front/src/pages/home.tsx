@@ -1,4 +1,4 @@
-import { CheckCircle, Upload, Brain, Calendar, BarChart3, FileText, Bell } from "lucide-react"
+import { CheckCircle, Upload, Brain, Calendar, BarChart3, FileText, Bell, Circle } from "lucide-react"
 import { Link } from "react-router-dom"
 import HomeHeader from "../components/layout/header-home"
 
@@ -111,25 +111,53 @@ export default function LandingPage() {
             <div className="border-2 border-blue-200 bg-blue-50 rounded-lg p-6">
               <div className="mb-4">
                 <span className="inline-block bg-blue-600 text-white text-sm px-2 py-1 rounded mb-2">MVP</span>
-                <h3 className="text-xl font-semibold text-blue-900">Sprints 1-4</h3>
+                <h3 className="text-xl font-semibold text-blue-900">Sprints 1-12</h3>
                 <p className="text-blue-700">Core Foundation</p>
               </div>
               <ul className="space-y-2 text-sm text-blue-800">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
-                  Upload & Transcription
+                  <Circle  className="h-4 w-4" />
+                  Public pages
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
-                  AI Summaries & Tasks
+                  <Circle className="h-4 w-4" />
+                  Dashboard
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
-                  Email Follow-ups
+                  <Circle  className="h-4 w-4" />
+                  Profile management
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
-                  PDF Export
+                  <Circle  className="h-4 w-4" />
+                  Sign in and sign up
+                </li>
+                <li className="flex items-center gap-2">
+                  <Circle  className="h-4 w-4" />
+                  Meeting upload and transcription
+                </li>
+                <li className="flex items-center gap-2">
+                  <Circle  className="h-4 w-4" />
+                  Upload audio files
+                </li>
+                <li className="flex items-center gap-2">
+                  <Circle  className="h-4 w-4" />
+                  AI-generated summaries
+                </li>
+                <li className="flex items-center gap-2">
+                  <Circle  className="h-4 w-4" />
+                  AI-generated action items
+                </li>
+                <li className="flex items-center gap-2">
+                  <Circle  className="h-4 w-4" />
+                  AI-generated deadlines
+                </li>
+                <li className="flex items-center gap-2">
+                  <Circle  className="h-4 w-4" />
+                  AI-generated responsible parties
+                </li>
+                <li className="flex items-center gap-2">
+                  <Circle  className="h-4 w-4" />
+                  AI-generated transcription
                 </li>
               </ul>
             </div>
@@ -138,24 +166,16 @@ export default function LandingPage() {
             <div className="border-2 border-green-200 bg-green-50 rounded-lg p-6">
               <div className="mb-4">
                 <span className="inline-block bg-green-600 text-white text-sm px-2 py-1 rounded mb-2">Version 1</span>
-                <h3 className="text-xl font-semibold text-green-900">Sprints 5-8</h3>
+                <h3 className="text-xl font-semibold text-green-900">Sprints 13-15</h3>
                 <p className="text-green-700">Enhanced Integration</p>
               </div>
               <ul className="space-y-2 text-sm text-green-800">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Google Drive Integration
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
-                  Delivery Tracking
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
-                  Visual Timeline
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Notion & Docs Export
                 </li>
               </ul>
@@ -165,24 +185,24 @@ export default function LandingPage() {
             <div className="border-2 border-purple-200 bg-purple-50 rounded-lg p-6">
               <div className="mb-4">
                 <span className="inline-block bg-purple-600 text-white text-sm px-2 py-1 rounded mb-2">Version 2</span>
-                <h3 className="text-xl font-semibold text-purple-900">Sprints 9-12</h3>
+                <h3 className="text-xl font-semibold text-purple-900">Sprints 15-18</h3>
                 <p className="text-purple-700">Smart Automation</p>
               </div>
               <ul className="space-y-2 text-sm text-purple-800">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Calendar Integration
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Auto Scheduling
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Multi-platform Support
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Task Dashboard
                 </li>
               </ul>
@@ -192,24 +212,24 @@ export default function LandingPage() {
             <div className="border-2 border-orange-200 bg-orange-50 rounded-lg p-6">
               <div className="mb-4">
                 <span className="inline-block bg-orange-600 text-white text-sm px-2 py-1 rounded mb-2">Version 3</span>
-                <h3 className="text-xl font-semibold text-orange-900">Sprints 13-16</h3>
+                <h3 className="text-xl font-semibold text-orange-900">Sprints 19-25</h3>
                 <p className="text-orange-700">Enterprise Ready</p>
               </div>
               <ul className="space-y-2 text-sm text-orange-800">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Browser Extension
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Slack/Jira Integration
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Advanced Analytics
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4" />
+                  <Circle className="h-4 w-4" />
                   Mobile App & White Label
                 </li>
               </ul>
@@ -232,7 +252,7 @@ export default function LandingPage() {
             <div className="bg-white border-2 hover:border-blue-200 transition-colors rounded-lg p-6">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-semibold text-gray-900">Starter</h3>
-                <div className="text-4xl font-bold text-gray-900 mt-4">$29</div>
+                <div className="text-4xl font-bold text-gray-900 mt-4">$20</div>
                 <p className="text-gray-600">per month</p>
               </div>
               <ul className="space-y-3 text-sm mb-6">
@@ -264,7 +284,7 @@ export default function LandingPage() {
               </div>
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-semibold text-gray-900">Professional</h3>
-                <div className="text-4xl font-bold text-gray-900 mt-4">$79</div>
+                <div className="text-4xl font-bold text-gray-900 mt-4">$50</div>
                 <p className="text-gray-600">per month</p>
               </div>
               <ul className="space-y-3 text-sm mb-6">
@@ -401,10 +421,9 @@ export default function LandingPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 flex flex-col">
             <p>&copy; 2025 MeetingMind. All rights reserved.</p>
-            <p>Bruno Ferrucio - CEO & Founder</p>
-            <p><Link to="https://wa.me/5511944994032" target="_blank">(11) 94499-4032</Link> - <Link to="mailto:brunofas1@gmail.com">brunofas1@gmail.com</Link></p>
+            <p><Link to="https://wa.me/5511944994032" className="underline" target="_blank">(11) 94499-4032</Link> - <Link to="mailto:brunofas1@gmail.com" className="underline">brunofas1@gmail.com</Link></p>
           </div>
         </div>
       </footer>
