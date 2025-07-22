@@ -16,13 +16,13 @@ export default function HomeHeader() {
         </Link>
 
         <nav className="flex flex-row items-center gap-5 max-md:hidden">
-          <Link to="/features" className="font-semibold text-gray-600  hover:text-[#291C84] transition-colors">
+          <Link to="/features" className="font-semibold text-gray-600  hover:text-[#2D5CF2] transition-colors">
             Features
           </Link>
-          <Link to="/roadmap" className="font-semibold text-gray-600  hover:text-[#291C84] transition-colors">
+          <Link to="/roadmap" className="font-semibold text-gray-600  hover:text-[#2D5CF2] transition-colors">
             Roadmap
           </Link>
-          <Link to="/pricing" className="font-semibold text-gray-600  hover:text-[#291C84] transition-colors">
+          <Link to="/pricing" className="font-semibold text-gray-600  hover:text-[#2D5CF2] transition-colors">
             Pricing
           </Link>
           <Link to="/sign-in" className={ButtonStyle("secondary")}>
@@ -46,13 +46,13 @@ export default function HomeHeader() {
 
       {openDrawer && (
         <nav className="flex flex-col text-center space-y-4 mb-5 px-5 min-md:hidden">
-          <Link to="/features" className="font-semibold text-gray-600 hover:text-[#291C84] transition-colors">
+          <Link to="/features" className="font-semibold text-gray-600 hover:text-[#2D5CF2] transition-colors">
             Features
           </Link>
-          <Link to="/roadmap" className="font-semibold text-gray-600 hover:text-[#291C84] transition-colors">
+          <Link to="/roadmap" className="font-semibold text-gray-600 hover:text-[#2D5CF2] transition-colors">
             Roadmap
           </Link>
-          <Link to="/pricing" className="font-semibold text-gray-600 hover:text-[#291C84] transition-colors">
+          <Link to="/pricing" className="font-semibold text-gray-600 hover:text-[#2D5CF2] transition-colors">
             Pricing
           </Link>
           <Link to="/sign-in" className={ButtonStyle("secondary")}>

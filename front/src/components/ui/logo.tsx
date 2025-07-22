@@ -1,7 +1,7 @@
 export function CompanyName() {
   return (
     <p className="text-2xl font-bold text-gray-900">
-      <span className="text-[#291C84]">Meeting</span>
+      <span className="text-[#2D5CF2]">Meeting</span>
       <span className="text-black">MIND</span>
     </p>
   );
