@@ -1,4 +1,4 @@
-import { ArrowLeft, Captions, Ellipsis, FileText, Key, ListTodo } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function ProfilesIndex() {
