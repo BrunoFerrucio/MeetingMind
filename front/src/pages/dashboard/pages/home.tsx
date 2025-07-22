@@ -128,7 +128,7 @@ export default function DashboardHome() {
 
         <div className="flex flex-col">
           {Array.from({ length: 10 }).map((_, index) => (
-            <Link to={`/dashboard/meeting/details/${index}`} className="w-full flex flex-row rounded-2xl border-gray-600 p-3 bg-white shadow-md mt-4 items-center justify-between">
+            <Link to={`/dashboard/meetings/details/${index}`} className="w-full flex flex-row rounded-2xl border-gray-600 p-3 bg-white shadow-md mt-4 items-center justify-between">
               <div className="flex flex-col">
                 <div className="flex flex-row mb-3">
                   <span>Reunião de planejamento 4ºQ</span>
