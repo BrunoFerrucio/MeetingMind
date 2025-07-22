@@ -1,4 +1,4 @@
-import { Blocks, LayoutPanelTop, LogOut, Plus, Settings, User } from "lucide-react"
+import { Blocks, LayoutPanelTop, LogOut, Plus, Settings, User, Video } from "lucide-react"
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom"
 
@@ -43,6 +43,11 @@ export default function Sidebar() {
         <Link to="/dashboard" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
           <LayoutPanelTop className="w-5 h-5" />
           <span>Dashboard</span>
+        </Link>
+
+        <Link to="meetings" className="flex items-center space-x-2 text-md mb-3 px-5 py-3 w-full hover:bg-gray-300">
+          <Video className="w-5 h-5" />
+          <span>Reuniões</span>
         </Link>
       </div>
 

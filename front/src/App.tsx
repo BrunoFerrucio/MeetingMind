@@ -14,6 +14,7 @@ import Register from './pages/user/register'
 import DashboardHome from './pages/dashboard/pages/home'
 import { DashboardMeetingDetails } from './pages/dashboard/pages/meeting/details'
 import DashboardMeeting from './pages/dashboard/pages/meeting'
+import { ProfilesIndex } from './pages/profiles'
 import ScrollToTop from './components/ScrollToTop'
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
         {/* Protected Routes */}
 
         <Route path="/profile" element={<DashboardIndex />}>
-          <Route index element={<div>Profile Page</div>} />
+          <Route index element={<ProfilesIndex />} />
         </Route>
 
         <Route path="/dashboard" element={<DashboardIndex />}>
